@@ -1,0 +1,6 @@
+-- 코드를 입력하세
+select name, count(name) as 'Count'
+from animal_ins
+group by name
+having count(name) >= 2
+order by 1
